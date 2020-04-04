@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'dotnet --version'
+                sh 'curl http://localhost:5000/WeatherForecast'
             }
         }
     }
